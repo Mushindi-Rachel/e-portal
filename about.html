@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>E-School</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/icon.png" rel="icon">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="scripts.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <style>
+        .msg-alert {
+            display: none;
+            position: fixed;
+            left: 50%;
+            -ms-transform: translate(-50%);
+            transform: translate(-50%);
+            bottom: 0;
+            z-index: 9999;
+        }
+        
+        .msg-alert p {
+            font-family: calibri;
+            border-radius: 5px 5px 0px 0px;
+            padding: 5px 8px;
+            font-size: 20px;
+            color: white;
+        }
+        
+        .slideshow-container {
+            position: absolute;
+        }
+        
+        .dot {
+            height: 15px;
+            width: 15px;
+            background-color: steelblue;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        
+        .activee {
+            background-color: #717171;
+        }
+        
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+        }
+        
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        
+        img {
+            border-radius: 30px 30px 200px 200px;
+        }
+        
+        .mySlides img {
+            width: 168%;
+        }
+    </style>
+</head>
+
+<body id="home">
+    <div class="msg-alert">
+        <p></p>
+    </div>
+    <div class="cssload-loader">
+        <div class="cssload-flipper">
+            <div class="cssload-front"></div>
+            <div class="cssload-back"></div>
+        </div><br/>
+        <center><span id="loading">Loading</span></center>
+    </div>
+
+    <div class="clr-switch"></div>
+    <div class="bubble-1"></div>
+    <div class="bubble-2"></div>
+    <div class="bubble-3"></div>
+
+
+
+
+    <body>
+        <header>
+            <div class="wrap-width">
+                <a href="about.html">
+                    <div class="navbar-logo">
+                        <img src="images/logoE.png" />
+                        <img id="hat" src="images/hat.png" />
+                    </div>
+                </a>
+                <!--<a href="#nav"><i class="material-icons">reorder</i></a>-->
+                <div class="horizontal-page-links" id="nav">
+
+                    <div class="register-user">
+                        <a id="login">Login</a>
+                        <!--<a id="register" href="#register">Register</a>-->
+                    </div>
+                    <!-- register-user -->
+
+                    <ul>
+                        <div class="sliding-out links">
+                            <li><a href="index.php">Home</a></li>
+                        </div>
+                        <div class="sliding-out links">
+                            <li><a href="about.html">About </a></li>
+                        </div>
+                        <div class="sliding-out links">
+                            <li><a href="contacts.html">Contact </a></li>
+                        </div>
+                    </ul>
+
+                </div>
+                <!-- horizontal-page-links -->
+            </div>
+        </header>
+        <!-- team section -->
+        <div class="container">
+            <section class="team">
+                <div class="container">
+                    <h2><b>**OUR TEAM**</b></h2>
+                    <div class="row">
+                        <div class="member">
+                            <div class="member-img">
+                                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="" style="width:100%">
+                                <div class="social">
+                                    <p class="email">moses@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h4>Moses Ali</h4>
+                                <span>Chief Executive Officer</span>
+                                <p>In West Philadelphia, born and raised… Khalid spent his early days curating visual displays. He went on to merchandise some of Philadelphia’s finest props and antiques before embarking on a 10+ year career in Arts Education.
+                                    Khalid Stewart defines what it means to be both artist and educator. Equipped with a BFA from the University of The Arts and years of dealing with the art and practice of creating strong visual content, he now manages
+                                    and directs the vision and the voice of Bluebell.com.</p>
+                            </div>
+                        </div>
+
+                        <div class="member">
+                            <div class="member-img">
+                                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                                <div class="social">
+                                    <p class="email">phanice@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h4>Phanice Johnsons</h4>
+                                <span>Product Manager</span>
+                                <p>Phanice is a Philadelphia based Creative Consultant with an extensive background in commercial photography, education and consulting. She's worked with hundreds of photographers from all parts of the globe during her time
+                                    in the industry. She holds an MPS in Digital Photography from The School of Visual Arts and a BFA in Photography from Parsons School of Design. </p>
+                            </div>
+                        </div>
+
+                        <div class="member">
+                            <div class="member-img">
+                                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="" style="width:100% ">
+                                <div class="social">
+                                    <p class="email">eric@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h4>Eric Anderson</h4>
+                                <span>Creative Consultant</span>
+                                <p>Eric has been working in the photography industry for over 8 years, honing his vision and her skills as both a photographer/photographer's assistant for clients in the hospitality, architecture, and education industry.
+                                    After working closely with Stacy Swiderski as his Assistant Photo Editor at Stacy Swiderski Consulting, Allie has been instrumental in the development and launch of Philly Reps. He works with photographers on creative
+                                    coaching, portfolio builds and project development.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="member">
+                            <div class="member-img">
+                                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                                <div class="social">
+                                    <p class="email">susan@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h4>Susan Neema</h4>
+                                <span>Marketing + Research specialist</span>
+                                <p>Susan is our resident marketing and research specialist and an integral part of the work that's done behind the scenes at Bluebell.com. Whether building a list, researching client prospects, digging through databases, or
+                                    making agency calls on behalf of our photographers, her role is the backbone of our brand. Prior to joining our team, she honed her skills in the commercial insurance industry.</p>
+                            </div>
+                        </div>
+
+                        <div class="member">
+                            <div class="member-img">
+                                <img src="assets/img/team/team-5.jpg" class="img-fluid" alt="">
+                                <div class="social">
+                                    <p class="email">heri@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h4>Heri Katz</h4>
+                                <span>Estimating and negotiating</span>
+                                <p>Katz is a venerated sage in the ad world who's well versed in every aspect of the industry. Having started out in the editorial world and now working as EP/Director of Production in the ad world, he understands the importance
+                                    of dotting every I and crossing every T when it comes to shoot production. Michael is a versatile asset to any photographers' team and is here to help with reviewing estimates, negotiating, and pricing.</p>
+                            </div>
+                        </div>
+
+                        <div class="member">
+                            <div class="member-img">
+                                <img src="assets/img/team/team-6.jpg" class="img-fluid" alt="">
+                                <div class="social">
+                                    <p class="email">christine@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h4>Christine Zawadi</h4>
+                                <span>Graphic Designer</span>
+                                <p>Zawadi is an experienced Art Director and Graphic Designer with nearly 10 years of experience in the industry. She’s honed his branding, logo design, illustration and typography skills working with clients from photographers,
+                                    non-profit organizations, higher education, and everything in between. Christine holds a BS in Graphic Design with a minor in photography from Pennsylvania College of Technology. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- team photos slideshow -->
+            <marquee scrollamount="30" direction="right" behaviour="slide">
+                <img src="assets/img/team/team-1.jpg" />
+                <img src="assets/img/team/team-2.jpg" />
+                <img src="assets/img/team/team-3.jpg" />
+                <img src="assets/img/team/team-4.jpg" />
+                <img src="assets/img/blog/comments-1.jpg" />
+                <img src="assets/img/blog/comments-2.jpg" />
+                <img src="assets/img/blog/comments-3.jpg" />
+                <img src="assets/img/blog/comments-4.jpg" />
+                <img src="assets/img/blog/comments-5.jpg" />
+                <img src="assets/img/blog/comments-6.jpg" />
+            </marquee>
+            <!-- testimonials from clients -->
+            <section class="testimonials">
+                <div class="container">
+                    <h2>Testimonials</h2>
+                    <div class="row">
+                        <div class="testimonial-item">
+                            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                            <h3>Alvin Goodman</h3>
+                            <h4>Ceo &amp; Founder</h4>
+                            <p>It was great working with Bluebell. They are proffesional, courteous and talented people and delivered their work on time and were always willing to help think and craft beautiful solutions.</p>
+                        </div>
+
+                        <div class="testimonial-item ">
+                            <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                            <h3>Asher Brandon</h3>
+                            <h4>Freelancer</h4>
+                            <p>From the start, they have approached our problem in a holistic manner, with expertise from different aspects.</p>
+                        </div>
+
+                        <div class="testimonial-item ">
+                            <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                            <h3>Chichi Wilsson</h3>
+                            <h4>Designer</h4>
+                            <p> A great agency if you are looking for a serious partner for content creation, blogging, design, development and optimization. They brought our business to the next level.</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="testimonial-item ">
+                            <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                            <h3>Anet Karlis</h3>
+                            <h4>Store Owner</h4>
+                            <p>I would like to pass my best wishes and big thanks to the entire team for delivering our project, with such delight, excellence and on time. </p>
+                        </div>
+
+                        <div class="testimonial-item ">
+                            <img src="assets/img/team/team-4.jpg" class="testimonial-img" alt="">
+                            <h3>Rael Pendo</h3>
+                            <h4>Freelancer</h4>
+                            <p>From the start, they have approached our problem in a holistic manner, with expertise from different aspects.</p>
+                        </div>
+
+                        <div class="testimonial-item ">
+                            <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                            <h3> Larson</h3>
+                            <h4>Entrepreneur</h4>
+                            <p>Bluebell handles most of our blogs, working with them was very convinient as they delivered very good quality in a short time.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+    </body>
+
+</html>
