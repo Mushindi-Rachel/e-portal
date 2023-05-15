@@ -1,13 +1,13 @@
 <?php include('header.php');
 
-$email = $_SESSION['user'];
+$email = $_SESSION['email'];
  $connection;
     // Select data from table table_employee
     $sql = "SELECT * FROM userss WHERE email = '$email'";
 
     $result = mysqli_query($connection, $sql);
 ?>
-
+<section>
 
     <center>
     <div class="container">
@@ -27,30 +27,30 @@ $email = $_SESSION['user'];
             $row = mysqli_fetch_assoc($result);
     
                 echo '<tr>
-                <th>Name</th>'
+                <th>Name: </th>'
                 .'<td>' . $row["name"] . "<br>";'</td>'.
-                '</tr>'.
-                '<tr>
-                <th>Gender  </th>'
+                '</tr>';
+                echo '<tr>
+                <th>Gender: </th>'
                 .'<td>'.$row["gender"].'</td>'.
-                '</tr>'.'
-                <tr><th>Age  </th>' 
+                '</tr>';
+                echo '<tr><th>Age: </th>' 
                 .'<td>'.$row["age"].'</td>'.
-                '</tr>'.
-                '<tr>
-                <th>Email  </th>'
+                '</tr>';
+                echo '<tr>
+                <th>Email: </th>'
                 .'<td>'.$row["email"].'</td>'.
-                '</tr>'.
-                '<tr>
-                <th>Contact  </th>'
+                '</tr>';
+                echo '<tr>
+                <th>Contact: </th>'
                 .'<td>'.$row["contact"].'</td>'.
-                '</tr>'.
-                '<tr>
-                <th>Class  </th>'
+                '</tr>';
+                echo '<tr>
+                <th>Class: </th>'
                 .'<td>'.$row["class"].'</td>'.
-                '</tr>'.
-                '<tr>
-                <th>Interest  </th>'
+                '</tr>';
+                echo '<tr>
+                <th>Interest: </th>'
                 .'<td>'.$row["interest"].'</td>'.
                 '</tr>';
 
@@ -65,4 +65,5 @@ $email = $_SESSION['user'];
     </div> 
     
     </center>
+</section>
  

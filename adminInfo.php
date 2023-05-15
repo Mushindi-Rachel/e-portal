@@ -4,6 +4,7 @@ $select = "SELECT * FROM admins";
 $result = $connection->query($select);
 ?>
 
+<section>
 <center>
     <div class="container">
       
@@ -50,3 +51,4 @@ $result = $connection->query($select);
     </div> 
     
 </center>
+</section>

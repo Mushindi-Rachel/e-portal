@@ -2,7 +2,7 @@ jQuery(document).ready(function(){
 	//cache DOM elements
 	var mainContent = $('.cd-main-content'),
 		header = $('.cd-main-header'),
-		sidebar = $('.cd-side-nav'),
+		sidebar = $('#sidebar-nav'),
 		sidebarTrigger = $('.cd-nav-trigger'),
 		topNavigation = $('.cd-top-nav'),
 		searchForm = $('.cd-search'),

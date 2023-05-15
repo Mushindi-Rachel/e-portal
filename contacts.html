@@ -51,6 +51,40 @@
 </head>
 
 <body>
+    <div id="login-form">
+        <input type="radio" id="login" name="switch" class="hide" checked>
+        <div>
+            <ul class="form-header">
+                <li><label for="login"><i class="material-icons">lock</i> LOGIN</li>
+            </ul>
+        </div>
+    
+        <div class="section-out">
+            <section class="login-section">
+                <div class="login">
+                    <form id="form_login" name="form_login" action="loginn.php" method="post">
+                        <ul class="ul-list">
+                            <li><input type="email" id="log_email" name="email" required class="input" placeholder="Email Address" required="" /><span class="icon"><i class="material-icons">local_post_office</i></span></li>
+    
+                            <li><input type="password" id="log_passwd" name="password" required class="input" minlength="4" maxlength="32" placeholder="Your Password" required="" /><span class="icon"><i class="material-icons">lock</i></span></li>
+    
+                            <li><input type="submit" id="submit" name="submit" value="Sign in" class="btn"></li>
+    
+    
+                            <li><input type="button" value="Close" class="btn close"></li>
+                            
+    
+                            <span class="errorTxt"></span>
+                            <div id="status"></div>
+                        </ul>
+                    </form>
+                </div>	<!-- login -->
+            </section>
+    
+            
+                        
+        </div>	<!-- section-out -->
+        </div>	<!-- login-form -->
     <header>
         <div class="wrap-width">
             <a href="contacts.html">
@@ -106,20 +140,9 @@
                     <p>+254 703 636 494<br>+254 711 126 595</p>
                 </div>
 
-
-                <div id="form">
-                    <form style="text-align: center;">
-                        <input type="text" placeholder="FirstName" size="40" id="firstname"><br>
-                        <input type="text" placeholder="SecondName" size="40" id="secondname"><br>
-                        <input type="text" placeholder="Email" size="40" id="email"><br>
-                        <input type="password" placeholder="Password" id="password" size="8"><br>
-                        <input type="checkbox" value="remember-me"> Keep me logged in<br>
-                        <button type="submit">SIGN IN</button><br>
-                        <a href="#"> Forgot Password?</a><br>
-                        <label style="margin: 20px;">New User</label><a href="register.html">Register</a>
-                    </form>
-                </div>
-            </center>
+                </form>
+        </div>
+        </center>
         </div>
     </section>
 

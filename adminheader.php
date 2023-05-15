@@ -13,6 +13,7 @@ $result = $connection->query($select);
 <link rel="stylesheet" type="text/css" href="css/media.css">
 <link rel="stylesheet" type="text/css" href="css/animate.css">
 
+
 <link href="assets/img/favicon.png" rel="icon">
 <link href="assets/img/icon.png" rel="icon">
 <link href="assets/css/style.css" rel="stylesheet">
@@ -20,6 +21,7 @@ $result = $connection->query($select);
 <script type="text/javascript" src="scripts.js"></script>
 <script src="js/jquery.js"></script>
 <script src="js/main.js"></script>
+<script src="js/profile.js"></script>
     <style>
         body {
     font-family: "Open Sans", sans-serif;
@@ -67,12 +69,13 @@ a {
     background: #2A2D33;
 }
 #sidebar-nav {
-    width: 106%;
-    height: calc(100% - 95px);
+    width: 100%;
+    height: 100%;
     padding: 0;
     background: #2A2D33;
     border-right: 1px solid #E0E0E0;
     overflow-y: scroll;
+    background-attachment: fixed;
 }
 #sidebar-nav h2 {
     color: #60636B;
@@ -95,6 +98,7 @@ a {
     color: #C2C2C2;
     font-size: 0.95em;
     padding: 15px 20px;
+    display: block;
     float: left;
     width: 100%;
     font-weight: 600;
@@ -115,14 +119,10 @@ a {
 #sidebar-nav ul li.active a {
     background: #fff;
     color: #333;
-}
-#sidebar-nav li a:active{
-    background: white;
+
 
 }
-#sidebar-nav ul li.active a i {
-    background: #fff;
-}
+
 #sidebar-nav i {
     padding-right: 8px;
     font-size: 1.3em;
@@ -131,6 +131,51 @@ a {
     text-align: center;
     
 }
+
+
+.butn{
+    color: white;
+    background-color: #0ebc7f;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 30px;
+    border: none;
+    width: 15%;
+    padding-bottom: 50px;
+    height: 10px;
+}
+
+#sidebar a.active {
+    background: #fff;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .cd-main-header {
+        position: fixed;
+        height: 55px;
+    }
+
+
+.cd-logo {
+    float: left;
+    display: block;
+    margin-left: 1%;
+    margin-top: 0px;
+    
+}
+  
+  section{
+    padding-top: 100px;
+  }
+
+  .menu li {
+    margin: 20px 0;
+  }
+
+}
+
+
 
 </style>
 </head>
@@ -161,29 +206,46 @@ a {
 	</header> <!-- .cd-main-header -->
 
 <section id="sidebar">
-<div class="white-label">
-</div>
+
 <div id="sidebar-nav">
 <ul>
-<li class="active"><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+<li ><i class="fa fa-dashboard"></i> Dashboard</li>
 <main class="cd-main-content">
 		<nav class="cd-side-nav">
-			<ul><li>
-					<a href="adminInfo.php"><i class="perm_identity"></i>Profile</a>
+    
+			<ul class="menu"><li>
+					<a href="adminInfo.php" class="nav-link"><i class="perm_identity"></i>Profile</a>
 				</li>
                 <ul>
-<li><a href="#"><i class="fas fa-comment-dots"></i> Messages</a></li>
-<li><a href="addannouncement.php"><i class="fa fa-list-alt"></i> Announcements</a></li>
+
+<li><a href="addannouncement.php" class="nav-link"><i class="fa fa-list-alt"></i> Announcements</a></li>
 </ul>
 <ul>
-<li><a href="#"><i class="fa fa-dollar"></i> Fee Structure</a></li>
-<li><a href="editresults.php"><i class="fa fa-download"></i> Results</a></li>
-<li><a href="editreport.php"><i class="fa fa-book"></i>Report</a></li>
-<li><a href="addUser.php"><i class="fa fa-book"></i>Add User</a></li>
+<li><a href="postfeestructure.php" class="nav-link"><i class="fa fa-dollar"></i> Fee Structure</a></li>
+<li><a href="editresults.php" class="nav-link"><i class="fa fa-download"></i> Results</a></li>
+<li><a href="editreport.php" class="nav-link"><i class="fa fa-book"></i>Report</a></li>
+<li><a href="addUser.php" ><i class="fa fa-book"></i>Add User</a></li>
 </ul>
 
 </ul>
+        </nav>
 </div>
 </section>
+<script>
+    const links = document.querySelectorAll('.nav-link');
+
+links.forEach(link => {
+  link.addEventListener('click', function() {
+    links.forEach(link => link.classList.remove('active'));
+    this.classList.add('active');
+    localStorage.setItem('activeLink', this.getAttribute('href'));
+  });
+
+  const activeLink = localStorage.getItem('activeLink');
+  if (link.getAttribute('href') === activeLink) {
+    link.classList.add('active');
+  }
+});
+    </script>
 </body>
 </html>

@@ -156,23 +156,23 @@
         <div class="slideshow-container">
 
             <div class="mySlides fade">
-                <img src="assets/img/1.jpg" style="height: 150%; width: 214%;">
+                <img src="assets/img/1.jpg" style="height: 150%; width: 100%;">
             </div>
 
             <div class="mySlides fade">
-                <img src="assets/img/2.jpg" style="height: 450%; width: 214%;">
+                <img src="assets/img/2.jpg" style="height: 450%; width: 100%;">
             </div>
             <div class="mySlides fade">
-                <img src="assets/img/4.webp" style="height: 150%; width: 218%;">
+                <img src="assets/img/4.webp" style="height: 150%; width: 100%;">
             </div>
             <div class="mySlides fade">
-                <img src="assets/img/4.avif" style="height: 450%; width: 212%;">
+                <img src="assets/img/4.avif" style="height: 450%; width: 100%;">
             </div>
             <div class="mySlides fade">
-                <img src="assets/img/5.jpg" style="height: 450%; width: 257%;">
+                <img src="assets/img/5.jpg" style="height: 450%; width: 100%;">
             </div>
             <div class="mySlides fade">
-                <img src="assets/img/6.jpg" style="height: 450%; width: 257%;">
+                <img src="assets/img/6.jpg" style="height: 450%; width: 100%;">
             </div>
         </div>
         <div style="text-align:center">

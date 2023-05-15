@@ -1,4 +1,6 @@
 <?php include_once('adminheader.php');
+error_reporting(0);
+
 $connection;
 
 $title= $_POST['title'];
@@ -20,6 +22,6 @@ else{
         <textarea name="description" style="width: 30%;"></textarea><br><br>
         <label>Date:</label> <br>
         <input type="date" name="date"><br><br>
-        <button class="add-button">Add Announcement</button>
+        <button class="butn">Add Announcement</button>
     </form>
 </section>
